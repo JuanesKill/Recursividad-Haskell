@@ -1,0 +1,5 @@
+potencia:: (Int -> Int)-> Int -> Int
+potenica 0 = 0
+potencia x y = if y > 0 then x * potencia(x  (y-1)) else 1
+
+main = print $ potencia 3 2
